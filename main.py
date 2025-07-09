@@ -39,7 +39,7 @@ def main() -> None:
             nickname=players_name,
             defaults={
                 "email": player_data["email"],
-                "bio": player_data["bio"],
+                "bio": player_data.get("bio", "") ,
                 "race": race_obj,
                 "guild": guild_obj,
             }
