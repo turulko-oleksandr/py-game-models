@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='skill',
             name='race',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='db.race'),
+            field=models.ForeignKey(null=False, on_delete=django.db.models.deletion.CASCADE, to='db.race'),
         ),
     ]
